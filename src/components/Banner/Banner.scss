@@ -1,0 +1,84 @@
+@import "../../variables";
+
+.banner {
+	width: 100%;
+	background-color: $neutral-primary;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		background-image: url("../../images/banner/banner-desktop.png");
+		background-repeat: no-repeat;
+		background-position: top 11px right 23px;
+		background-size: 440px 165px;
+
+		@media (max-width: $desktop) {
+			margin-bottom: 40px;
+			padding-top: 15px;
+			padding-bottom: 19px;
+			background-image: url("../../images/banner/banner-mobile.png");
+			background-position: bottom 0 right 3px;
+			background-size: 240px 90px;
+		}
+
+		@media (max-width: $tablet) {
+			margin-bottom: 20px;
+			justify-content: center;
+			padding-bottom: 93px;
+			background-position: bottom 0 center;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+
+		@media (max-width: $desktop) {
+			margin-bottom: 1px;
+		}
+
+		@media (max-width: $tablet) {
+			margin-bottom: 3px;
+		}
+	}
+
+	&__text {
+		width: 529px;
+
+		@media (max-width: $desktop) {
+			width: 353px;
+		}
+
+		@media (max-width: $tablet) {
+			width: 281px;
+			margin: 0 auto;
+		}
+	}
+
+	&__text-block {
+		width: 619px;
+
+		@media (max-width: $desktop) {
+			width: 387px;
+		}
+
+		@media (max-width: $tablet) {
+		}
+	}
+
+	&__img {
+		width: 440px;
+		height: 165px;
+
+		@media (max-width: $desktop) {
+			width: 240px;
+			height: 90px;
+		}
+
+		@media (max-width: $tablet) {
+		}
+	}
+}

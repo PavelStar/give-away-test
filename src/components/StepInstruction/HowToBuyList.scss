@@ -1,0 +1,53 @@
+@import "../../_variables";
+
+.how-to-buy-list {
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+
+		@media (max-width: $desktop) {
+			margin-right: 10px;
+		}
+
+		@media (max-width: $tablet) {
+		}
+	}
+
+	&__num {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 28px;
+		height: 28px;
+		margin-right: 13px;
+		background-color: $dark-primary;
+		color: $light;
+		border-radius: 50%;
+		font-size: 12px;
+
+		@media (max-width: $desktop) {
+			margin-right: 7px;
+			width: 20px;
+			height: 20px;
+		}
+
+		@media (max-width: $tablet) {
+			margin-right: 14px;
+		}
+
+		img {
+			width: 18px;
+			height: 18px;
+			@media (max-width: $desktop) {
+				width: 13px;
+			}
+		}
+	}
+
+	&__title {
+		span {
+			display: block;
+		}
+	}
+}

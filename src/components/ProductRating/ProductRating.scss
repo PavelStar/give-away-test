@@ -1,0 +1,47 @@
+@import "../../_variables";
+
+.product-rating {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+
+	@media (max-width: $desktop) {
+		margin-bottom: 27px;
+		font-size: 12px;
+	}
+
+	@media (max-width: $tablet) {
+		margin-bottom: 10px;
+	}
+
+	&__popularity {
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $dark-primary;
+
+		@media (max-width: $desktop) {
+			font-size: 12px;
+		}
+
+		@media (max-width: $tablet) {
+		}
+	}
+
+	&__reviews-link {
+		display: flex;
+		align-items: center;
+	}
+
+	&__stars {
+		margin-right: 10px;
+	}
+
+	&__stars-img {
+		@media (max-width: $desktop) {
+			height: 12px;
+		}
+
+		@media (max-width: $tablet) {
+		}
+	}
+}

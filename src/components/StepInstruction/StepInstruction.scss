@@ -1,0 +1,26 @@
+@import "../../_variables";
+
+.step-instruction {
+	display: flex;
+	margin-bottom: 93px;
+
+	&__info-wrap {
+		width: 100%;
+
+		@media (max-width: $desktop) {
+			justify-content: center;
+		}
+
+		@media (max-width: $tablet) {
+		}
+	}
+
+	@media (max-width: $desktop) {
+		justify-content: center;
+	}
+
+	@media (max-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
